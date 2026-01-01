@@ -5,4 +5,6 @@
 !scripts.js
 !style.css
 !images/
+!images/**
 !screenshots/
+!screenshots/**
