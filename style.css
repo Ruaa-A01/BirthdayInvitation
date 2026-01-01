@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+ --bg-1: #ffd5ea;
+ --bg-2: #f2f9ff;
+ --accent-1: #ff9cc7;
+ --accent-2: #9bd3ff;
+ --muted: #6b6b6b;
+ --card-bg: #ffffffb3;
+ --glass-border: #ffffff80;
+ --max-w: 880px;
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family:'Quicksand', sans-serif;
+ background: var(--bg-1);
+ -webkit-font-smoothing: antialiased;
+ color: #222;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 3rem 1rem;
+}
+
+.invitation-card {
+ width: 50%;
+ max-width: var(--max-w);
+ background: var(--card-bg);
+ border-radius: 18px;
+ padding: 2.25rem 2.5rem;
+ box-shadow: 0 20px 50px #0b16281f;
+ border: 1px solid var(--glass-border);
+ text-align: center;
+}
+
+.event-image {
+ width: 200px;
+ height: 150px;
+ object-fit: cover;
+ border-radius: 3%;
+ margin: 0 auto 1.25rem;
+ display: block;
+ box-shadow: 0 8px 20px #0000000f;
+}
+
+.event-image:hover {
+ transform: scale(1.05);
+ transition: transform 0.3s ease;
+}
+
+.event-title {
+ font-size: 2rem;
+ letter-spacing: 0.3px;
+ color: #8aafdc;
+ font-weight: 800;
+ text-align: center;
+}
+
+.birthday-person {
+ color: var(--accent-1);
+ font-weight: 600;
+}
+
+.event-details {
+ margin: 1.25rem auto;
+ text-align: center;
+ color: #5a5a5a;
+ line-height: 1.6;
+ font-size: 1.2rem;
+ font-weight: 400;
+}
+
+.rsvp {
+ text-align: center;
+ color: var(--muted);
+ font-weight: 600;
+ margin-bottom: 1.25rem;
+ color: #8aafdc;
+ font-size: 1.2rem;
+}
+
+.decorations {
+ margin-top: 3rem;
+}
+
+.decor-grid {
+ display: grid;
+ align-items: center;
+ justify-items: center;
+ 
+}
+
+.decor-img {
+ width: 80px;
+ height: 80px;
+ object-fit: cover;
+ border-radius: 12px;
+ size-adjust: auto;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+ .decor-grid {
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.6rem;
+ }
+ .decor-img { 
+    width: 60px;
+    height: 60px;
+ }
+ .invitation-card {
+    padding: 1.25rem;
+ }
+ .event-title {
+    font-size: 1.5rem;
+ }
+ .event-details {
+    font-size: 0.9rem;
+ }
+}
