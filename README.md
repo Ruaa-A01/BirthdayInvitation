@@ -12,6 +12,8 @@ This project features a responsive digital birthday invitation designed with sim
 - Decorative Images Are Stored In `images/` Folder & Displayed In A Grid Layout `decor-grid` Gallery.
 - A Lightweight `scripts.js` Adds A Confetti Burst Effect When The Card Is Clicked.
 
+![Birthday invite screenshot](screenshots/birthdayinvite.png)
+
 ---
 
 ## Project Structure
