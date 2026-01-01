@@ -30,4 +30,4 @@ This project features a responsive digital birthday invitation designed with sim
 
 ---
 
-*Cake First. Everything Else Later!*🍰
+*Cake First. Everything Else Later!*
